@@ -32,3 +32,8 @@ export class AppComponent {
 //this folder gets created
 //whenever you want to create any component, service or module
 //you need to create within this app folder
+
+// main.ts
+//this is starting point of angular application
+//when we will run angular application it is going to execute main.ts file
+//first and then it will load the app module
