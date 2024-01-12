@@ -17,23 +17,4 @@ export class AppComponent {
   title = 'practise-app';
 }
 
-// angular.json file
-//this file contains all the configuration of the angular project
-
-// package-lock.json
-//this file records every version of installed dependency including the subdependency
-//and their version
-//the purpose of this file is that it ensures the same dependencies are installed
-//consistently across every different environment
-//in development environment,production environment,integration environment
-//so all in this environment same depenedency should get installed
-
-// ./src/app
-//this folder gets created
-//whenever you want to create any component, service or module
-//you need to create within this app folder
-
-// main.ts
-//this is starting point of angular application
-//when we will run angular application it is going to execute main.ts file
-//first and then it will load the app module
+// Bootstrapping is the process of initializing or loading angular application
