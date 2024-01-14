@@ -3,11 +3,16 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './headers/header.component';
 
+// In Angular, the styles of a parent component are typically encapsulated to
+// avoid affecting the styles of its child components. This is achieved
+// through a mechanism called View Encapsulation.
+
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet, HeaderComponent],
   templateUrl: './app.component.html',
+  //it can also be array of style files
   styleUrl: './app.component.css',
 })
 //
@@ -15,12 +20,4 @@ export class AppComponent {
   title = 'practise-app';
 }
 
-//to create component
-//1)Create a Typescript class and export it
-//2)Decorate the class with @Component decorator
-//3)Declare the class in main module file
-
-//IMPORTANT
-//child component folder should be always be inside parent component folder
-// IMPORTANT
-//Component is nothing but typescript class
+//if we want to apply css globally use style.css file in src folder
