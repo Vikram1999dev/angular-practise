@@ -1,34 +1,31 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { TopHeaderComponent } from './top-header/top-header.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, TopHeaderComponent],
+  imports: [CommonModule, RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 
-//to generate component using cli
-// we type command ng g c topHeader
 //
-//
-// to create child component of any component
-// you have to go inside the component folder
-// and type that cli command
-//
-//
-// for child component to be used inside the parent component
-//call the child component selector inside the parent html file
-//and also import its class in parent's ts file
-//
-// *********************************************
-//I created a component folder outside its parent
-// earlier the child component should be created inside the parent component folder
-//to be used AND NOW that is not the case.
-// that's the power of standalone component
+// data binding allows us to communicate between component class with its view template
+//and vice versa
 export class AppComponent {
+  // see in template
+  // for data defined here to be used in html
+  // we use
+  // {{}}, this is string interpolation
+  // (), this is event binding
+  // [] this is property binding
+  //for this see in template file
   title = 'practise-app';
+  message = 'online-learning';
+  display = false;
+
+  onClick() {
+    this.display = !this.display;
+  }
 }
