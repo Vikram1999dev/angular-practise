@@ -9,6 +9,8 @@ import { Component } from '@angular/core';
 })
 export class ProductListComponent {
   name = 'John Doe';
+  quantity: number = 0;
+  quantityZero: string = 'No Product';
   product = {
     name: 'iPhone',
     price: 999,
@@ -23,5 +25,21 @@ export class ProductListComponent {
       this.product.price -
       (this.product.price * this.product.discountedPrice) / 100
     );
+  }
+
+  onNameChange(e: Event) {
+    this.name = (e.target as HTMLInputElement).value;
+  }
+
+  handleIncrement() {
+    this.quantity++;
+  }
+
+  handleDecrement() {
+    if (this.quantity > 0) {
+      this.quantity--;
+    } else {
+      this.quantityZero = 'No Product';
+    }
   }
 }
