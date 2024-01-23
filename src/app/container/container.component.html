@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="list">
+    <div class="list-item" *ngFor="let item of products" id="{{ item.id }}">
+      <p><strong>Name:</strong> {{ item.name }}</p>
+      <p><strong>Category:</strong> {{ item.category }}</p>
+      <p><strong>Price: </strong>$ {{ item.price }}</p>
+      <ul>
+        <li><strong>Weight</strong> {{ item.specifications.weight }}kg</li>
+        <li>
+          <ul>
+            <li>
+              <strong>Length: </strong
+              >{{ item.specifications.dimensions.length }}m
+            </li>
+            <li>
+              <strong>Width: </strong>{{ item.specifications.dimensions.width }}
+            </li>
+            <li>
+              <strong>Height: </strong
+              >{{ item.specifications.dimensions.height }}
+            </li>
+          </ul>
+        </li>
+        <li>
+          The color is
+          <span
+            [ngStyle]="{
+              display: 'inline-block',
+              height: '10px',
+              width: '10px',
+              'background-color': item.specifications.color
+            }"
+          ></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

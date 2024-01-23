@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { ForLoopComponent } from './for-loop/for-loop.component';
+import { ContainerComponent } from './container/container.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, ForLoopComponent],
+  imports: [CommonModule, RouterOutlet, ContainerComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
