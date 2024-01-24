@@ -10,10 +10,9 @@ import { ContainerComponent } from './container/container.component';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
-
-//basically a for loop
-//a structural directive used to repeat a portion of HTML template once
-//per each item for an iterable list
+//
+//ngIf directive is a structural directive that is used to completely add or
+//remove a DOM element from the webpage based on a given condition
 export class AppComponent {
   title = 'practise-app';
   message = 'online-learning';
