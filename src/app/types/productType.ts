@@ -1,4 +1,4 @@
-export interface Product {
+export interface ProductType {
   id: number;
   name: string;
   category: string;
@@ -11,7 +11,7 @@ export interface Product {
       width: number;
       height: number;
     };
-    color: string;
+    colors: string[];
     material: string;
     additionalAttribute1: string;
     additionalAttribute2: number;
