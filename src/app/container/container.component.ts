@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './container.component.css',
 })
 export class ContainerComponent {
-  show = true;
+  show = false;
 
   toggleShow() {
     this.show = !this.show;

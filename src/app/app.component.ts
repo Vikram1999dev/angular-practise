@@ -11,8 +11,9 @@ import { ContainerComponent } from './container/container.component';
   styleUrl: './app.component.css',
 })
 //
-//ngIf directive is a structural directive that is used to completely add or
-//remove a DOM element from the webpage based on a given condition
+//ngStyle directive is an attribute directive which allows us to set many inline styles
+//of an HTML element using expression.
+//to add style dynamically
 export class AppComponent {
   title = 'practise-app';
   message = 'online-learning';

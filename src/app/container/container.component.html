@@ -1,4 +1,9 @@
 <div class="container">
-  <button (click)="toggleShow()">Show</button>
+  <button
+    (click)="toggleShow()"
+    [ngStyle]="{ fontWeight: 'bold', color: show ? 'blue' : 'red' }"
+  >
+    Show
+  </button>
   <h1 *ngIf="show">show this if show variable is true</h1>
 </div>
