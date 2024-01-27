@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { ProductListComponent } from './product-list/product-list.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, ProductListComponent],
+  imports: [CommonModule, RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
@@ -31,12 +30,4 @@ import { ProductListComponent } from './product-list/product-list.component';
 //structural directive
 //this directive is used to add or remove a DOM element on the Webpage
 //e.g. ngIf,ngFor,ngSwitch
-export class AppComponent {
-  title = 'practise-app';
-  message = 'online-learning';
-  display = false;
-
-  onClick() {
-    this.display = !this.display;
-  }
-}
+export class AppComponent {}
