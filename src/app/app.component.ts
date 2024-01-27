@@ -14,6 +14,7 @@ import { ContainerComponent } from './container/container.component';
 //In order to pass data from parent component to child component
 //we use @Input decorator
 // and also Custom property binding
+//for rest of the info go to container folder
 export class AppComponent {
   title = 'practise-app';
   message = 'online-learning';

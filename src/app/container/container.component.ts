@@ -10,6 +10,7 @@ import { ContainerCompoComponent } from '../container-compo/container-compo.comp
   templateUrl: './container.component.html',
   styleUrl: './container.component.css',
 })
+// we need to add @Input decorator in order to grab the info from parent
 export class ContainerComponent {
   products: ProductType[] = [
     {
