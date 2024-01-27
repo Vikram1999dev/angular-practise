@@ -11,11 +11,9 @@ import { ContainerComponent } from './container/container.component';
   styleUrl: './app.component.css',
 })
 //
-//The *ngClass directive which is an attribute directive in Angular allows you to dynamically set CSS classes on an HTML element by databinding
-//  an expression that represents all classes to be added. The expression can be a string, an object, or an array.
-//
-//false,'',null,undefined,0 are falsy value
-//other than this is a falsy value
+//In order to pass data from parent component to child component
+//we use @Input decorator
+// and also Custom property binding
 export class AppComponent {
   title = 'practise-app';
   message = 'online-learning';

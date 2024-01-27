@@ -1,12 +1,8 @@
 <div class="container">
-  <!-- if the show if true the button-style class will be applied -->
-  <!-- with true it always will be applied -->
-  <button
-    (click)="toggleShow()"
-    [ngStyle]="{ fontWeight: 'bold', color: show ? '#fff' : 'aqua' }"
-    [ngClass]="{ btn: true, 'btn-primary': true, 'button-style': show }"
-  >
-    Show
-  </button>
-  <h1 *ngIf="show">show this if show variable is true</h1>
+  <div class="list">
+    <container-compo
+      *ngFor="let item of products"
+      [prod]="item"
+    ></container-compo>
+  </div>
 </div>
