@@ -20,7 +20,5 @@ export class AppComponent {
 //2)Decorate the class with @Component decorator
 //3)Declare the class in main module file
 
-//IMPORTANT
-//child component folder should be always be inside parent component folder
 // IMPORTANT
 //Component is nothing but typescript class
