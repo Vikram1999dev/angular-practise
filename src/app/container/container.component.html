@@ -1,10 +1,5 @@
 <div class="container">
   <div class="list">
-    <!-- this [prod] is defined in the component of this component -->
-    <!-- we are sending the item in it -->
-    <container-compo
-      *ngFor="let item of products"
-      [prod]="item"
-    ></container-compo>
+    <filter [all]="10" [inStock]="5" [outOfStock]="10"></filter>
   </div>
 </div>
