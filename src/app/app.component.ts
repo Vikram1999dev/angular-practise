@@ -18,7 +18,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 //the DOM in some other way
 //when we want to display some data in HTML we use string interpolation
 //BUT
-// when we want to assign some dynamic value we to an HTML attribute
+// when we want to assign some dynamic value to an -->HTML attribute
 //there we use property binding
 //in the "" we can write any typescript expression
 export class AppComponent {
