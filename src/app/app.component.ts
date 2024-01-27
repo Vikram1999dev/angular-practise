@@ -11,9 +11,11 @@ import { ContainerComponent } from './container/container.component';
   styleUrl: './app.component.css',
 })
 //
-//ngStyle directive is an attribute directive which allows us to set many inline styles
-//of an HTML element using expression.
-//to add style dynamically
+//The *ngClass directive which is an attribute directive in Angular allows you to dynamically set CSS classes on an HTML element by databinding
+//  an expression that represents all classes to be added. The expression can be a string, an object, or an array.
+//
+//false,'',null,undefined,0 are falsy value
+//other than this is a falsy value
 export class AppComponent {
   title = 'practise-app';
   message = 'online-learning';

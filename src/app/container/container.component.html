@@ -1,7 +1,10 @@
 <div class="container">
+  <!-- if the show if true the button-style class will be applied -->
+  <!-- with true it always will be applied -->
   <button
     (click)="toggleShow()"
-    [ngStyle]="{ fontWeight: 'bold', color: show ? 'blue' : 'red' }"
+    [ngStyle]="{ fontWeight: 'bold', color: show ? '#fff' : 'aqua' }"
+    [ngClass]="{ btn: true, 'btn-primary': true, 'button-style': show }"
   >
     Show
   </button>
