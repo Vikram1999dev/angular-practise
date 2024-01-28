@@ -14,6 +14,7 @@ import { ProductItemComponent } from '../product-item/product-item.component';
 //
 // 1.selectedFilterRBtnEvent this is an event emitter defined
 // which will emit an event when radio button is selected
+// to use it we define under @Output()
 // 2.selectedFilterRBtnEvent will be defined as event binding in container.component.html file
 // 3.onFilterChanged method will be triggered by this event
 export class ContainerComponent {
@@ -134,13 +135,11 @@ export class ContainerComponent {
 
   finalProducts: ProductType[] = this.products;
 
-  selectedFilterRadioButton: string = 'all';
   productCount = this.products.length;
   productInStock = this.products.filter((p) => p.inStock);
   productOutOfStock = this.products.filter((p) => !p.inStock);
 
   onFilterChanged(value: string) {
-    this.selectedFilterRadioButton = value;
     if (value === 'all') {
       this.finalProducts = this.products;
     } else if (value === 'inStock') {
