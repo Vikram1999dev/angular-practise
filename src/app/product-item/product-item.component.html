@@ -1,0 +1,36 @@
+<div class="list-item" id="{{ prod?.id }}">
+  <p><strong>Name:</strong> {{ prod?.name }}</p>
+  <p><strong>Category:</strong> {{ prod?.category }}</p>
+  <p><strong>Price: </strong>$ {{ prod?.price }}</p>
+  <ul>
+    <li><strong>Weight</strong> {{ prod?.specifications?.weight }}kg</li>
+    <li>
+      <ul>
+        <li>
+          <strong>Length: </strong
+          >{{ prod?.specifications?.dimensions?.length }}m
+        </li>
+        <li>
+          <strong>Width: </strong>{{ prod?.specifications?.dimensions?.width }}
+        </li>
+        <li>
+          <strong>Height: </strong
+          >{{ prod?.specifications?.dimensions?.height }}
+        </li>
+      </ul>
+    </li>
+    <li>
+      The color is
+      <span
+        *ngFor="let color of prod?.specifications?.colors"
+        [ngStyle]="{
+          display: 'inline-block',
+          height: '10px',
+          width: '10px',
+          'background-color': color,
+          'margin-right': '5px'
+        }"
+      ></span>
+    </li>
+  </ul>
+</div>

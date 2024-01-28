@@ -11,10 +11,9 @@ import { ContainerComponent } from './container/container.component';
   styleUrl: './app.component.css',
 })
 //
-//In order to pass data from parent component to child component
-//we use @Input decorator
-// and also Custom property binding
-//for rest of the info go to container folder
+//In order to pass data from child component to parent component
+//we use Event binding and @Output()
+// SEE container.component.ts and filter.component.ts file FOR MORE INFO
 export class AppComponent {
   title = 'practise-app';
   message = 'online-learning';

@@ -1,5 +1,16 @@
 <div class="container">
   <div class="list">
-    <filter [all]="10" [inStock]="5" [outOfStock]="10"></filter>
+    <filter
+      [all]="productCount"
+      [inStock]="productInStock.length"
+      [outOfStock]="productOutOfStock.length"
+      (selectedFilterRBtnEvent)="onFilterChanged($event)"
+    ></filter>
+  </div>
+  <div class="list">
+    <product-item
+      *ngFor="let item of finalProducts"
+      [prod]="item"
+    ></product-item>
   </div>
 </div>

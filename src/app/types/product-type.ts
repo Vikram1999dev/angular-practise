@@ -12,11 +12,5 @@ export interface ProductType {
       height: number;
     };
     colors: string[];
-    material: string;
-    additionalAttribute1: string;
-    additionalAttribute2: number;
-    additionalAttribute3: boolean;
-    additionalAttribute4: string[];
-    additionalAttribute5: Date;
   };
 }
