@@ -11,9 +11,9 @@ import { ContainerComponent } from './container/container.component';
   styleUrl: './app.component.css',
 })
 //
-//In order to pass data from child component to parent component
-//we use Event binding and @Output()
-// SEE container.component.ts and filter.component.ts file FOR MORE INFO
+//A template reference variable is a variable which stores a reference
+//to a DOM element,Component or Directive on which it is used
+//basically like a useRef
 export class AppComponent {
   title = 'practise-app';
   message = 'online-learning';

@@ -1,16 +1,17 @@
 <div class="container">
-  <div class="list">
-    <filter
-      [all]="productCount"
-      [inStock]="productInStock.length"
-      [outOfStock]="productOutOfStock.length"
-      (selectedFilterRBtnEvent)="onFilterChanged($event)"
-    ></filter>
-  </div>
-  <div class="list">
-    <product-item
-      *ngFor="let item of finalProducts"
-      [prod]="item"
-    ></product-item>
+  <div class="form-group">
+    <input
+      class="form-control"
+      id="exampleFormControlInput1"
+      placeholder="name@example.com"
+      #searchInput
+    />
+    <button
+      (click)="handleButtonChange(searchInput)"
+      type="submit"
+      class="btn btn-primary"
+    >
+      Submit
+    </button>
   </div>
 </div>

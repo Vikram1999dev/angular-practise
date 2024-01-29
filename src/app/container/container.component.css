@@ -1,3 +1,7 @@
-.button-style {
-  transform: scale(2);
+input {
+  margin-top: 15em;
+}
+
+button {
+  margin-top: 1.5em;
 }
