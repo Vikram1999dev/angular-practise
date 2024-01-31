@@ -11,14 +11,6 @@ import { ContainerComponent } from './container/container.component';
   styleUrl: './app.component.css',
 })
 //
-//Here template reference refer to component
-//with which we can access all the properties and methods of the component that is refer to
-export class AppComponent {
-  title = 'practise-app';
-  message = 'online-learning';
-  display = false;
-
-  onClick() {
-    this.display = !this.display;
-  }
-}
+//@ViewChild  It's a way for the parent component
+//  to "see" or "capture" a reference to a child component and interact with it directly.
+export class AppComponent {}

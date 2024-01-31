@@ -4,10 +4,10 @@
       class="form-control"
       id="exampleFormControlInput1"
       placeholder="name@example.com"
+      #inputReference
+      (input)="handleChange()"
     />
-    <button type="submit" class="btn btn-primary">Submit</button>
   </div>
 </div>
 
-<container-item #containerRef></container-item>
-<container-item-2 [secContainerRef]="containerRef.reference"></container-item-2>
+<container-child #childReference></container-child>

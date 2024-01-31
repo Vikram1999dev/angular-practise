@@ -1,16 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ContainerItemComponent } from '../container-item/container-item.component';
-import { ContainerItem2Component } from '../container-item-2/container-item-2.component';
+import { ContainerChildComponent } from '../container-child/container-child.component';
 
 @Component({
   selector: 'container',
   standalone: true,
-  imports: [CommonModule, ContainerItemComponent, ContainerItem2Component],
+  imports: [CommonModule, ContainerChildComponent],
   templateUrl: './container.component.html',
   styleUrl: './container.component.css',
 })
 //
-// the input element is referred like this
-// #searchInput
-export class ContainerComponent {}
+//
+export class ContainerComponent {
+  @ViewChild('inputReference') selectedEle?: ElementRef;
+  @ViewChild('childReference') selectedChildComponent?: ContainerChildComponent;
+  handleChange(): void {
+    console.log(this.selectedEle?.nativeElement.value);
+    this.selectedChildComponent?.handleChangeChange();
+  }
+}
