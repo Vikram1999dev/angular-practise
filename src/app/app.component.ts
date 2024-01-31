@@ -11,9 +11,8 @@ import { ContainerComponent } from './container/container.component';
   styleUrl: './app.component.css',
 })
 //
-//A template reference variable is a variable which stores a reference
-//to a DOM element,Component or Directive on which it is used
-//basically like a useRef
+//Here template reference refer to component
+//with which we can access all the properties and methods of the component that is refer to
 export class AppComponent {
   title = 'practise-app';
   message = 'online-learning';

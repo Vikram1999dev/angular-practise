@@ -4,14 +4,10 @@
       class="form-control"
       id="exampleFormControlInput1"
       placeholder="name@example.com"
-      #searchInput
     />
-    <button
-      (click)="handleButtonChange(searchInput)"
-      type="submit"
-      class="btn btn-primary"
-    >
-      Submit
-    </button>
+    <button type="submit" class="btn btn-primary">Submit</button>
   </div>
 </div>
+
+<container-item #containerRef></container-item>
+<container-item-2 [secContainerRef]="containerRef.reference"></container-item-2>
