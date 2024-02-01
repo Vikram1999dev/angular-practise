@@ -21,6 +21,11 @@ import { ProductListComponent } from './product-list/product-list.component';
 // when we want to assign some dynamic value to an -->HTML attribute
 //there we use property binding
 //in the "" we can write any typescript expression
+//
+//
+//CHECK OUT THE LIST OF IMPORTANT PROPERTY BINDING IN product-list.component.ts file
+//
+//
 export class AppComponent {
   title = 'practise-app';
   message = 'online-learning';
