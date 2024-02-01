@@ -14,6 +14,11 @@ import { ProductListComponent } from './product-list/product-list.component';
 //
 //data flow from view to class
 //use of event binding
+//
+//
+//CHECK OUT THE LIST OF IMPORTANT EVENT BINDING IN product-list.component.ts file
+//
+//
 export class AppComponent {
   title = 'practise-app';
   message = 'online-learning';

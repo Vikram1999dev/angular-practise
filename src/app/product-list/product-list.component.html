@@ -8,3 +8,40 @@
 <button (click)="handleIncrement()" class="btn btn-primary">+</button>
 <span>{{ quantity > 0 ? quantity : quantityZero }}</span>
 <button (click)="handleDecrement()" class="btn btn-secondary">-</button>
+<br />
+<br />
+
+<!--  -->
+<!-- 1) -->
+<select (change)="handleSelectChange($event)" name="select" id="">
+  <option value="one">1</option>
+  <option value="two">2</option>
+  <option value="three">3</option>
+</select>
+<!--  -->
+<!-- 2) -->
+<button class="btn btn-primary" (mouseover)="handleMouseOver()">
+  Hover Me
+</button>
+<!--  -->
+<!-- 3) -->
+<button class="btn btn-primary" (mouseout)="handleMouseOut()">Leave Me</button>
+<!--  -->
+<!-- 4) -->
+<input (keyup)="handleKeyUp($event)" />
+<!-- -->
+<!-- 5) -->
+<form (submit)="handleSubmit($event)">
+  <button>submit</button>
+</form>
+<!--  -->
+<!-- 6) -->
+<input placeholder="blurr out" (blur)="handleBlur()" />
+<!--  -->
+<!-- 7) -->
+<input placeholder="focus in" (focus)="handleFocus()" />
+<!--  -->
+<!-- 8) -->
+<button class="btn btn-secondary" (dblclick)="handleDoubleClick()">
+  Double click me
+</button>
