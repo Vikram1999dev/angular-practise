@@ -9,6 +9,6 @@ import { Component } from '@angular/core';
 })
 export class ContainerChildComponent {
   handleChangeChange() {
-    console.log('hello');
+    console.log('hello from child component');
   }
 }
